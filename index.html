@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Cash Register Manager</title>
+  </head>
+  <body>
+    <header>
+      <h3 class="top-subheading">CASH REGISTER</h3>
+      <h1 class="heading">Manager</h1>
+      <h3 class="bottom-subheading">
+        Enter the bill amount and cash given by the customer and know minimum
+        number of notes to return.
+      </h3>
+    </header>
+    <main class="main">
+      <div class="image-container">
+        <img class="image" src="https://i.ibb.co/TrwZjtZ/bro.png" alt="" />
+      </div>
+      <div class="content-container">
+        <div class="input-output-container">
+          <h5 class="input-label">Bill Amount</h5>
+          <input
+            class="input"
+            id="bill-amount"
+            type="number"
+            placeholder="Enter bill amount..."
+          />
+          <h5 class="input-label" id="cash-given-label">Cash Given</h5>
+          <input
+            class="input"
+            id="cash-given"
+            type="number"
+            placeholder="Enter the cash given..."
+          />
+
+          <button class="check-button">Calculate now</button>
+        </div>
+      </div>
+      <div class="output"></div>
+    </main>
+    <footer class="footer">
+      <h4 class="footer-heading">2021 | Mobashir Farhan</h4>
+      <div class="social-icons">
+        <a href="">
+          <i class="icon fab fa-twitter"></i>
+        </a>
+        <a href="">
+          <i class="icon fab fa-github"></i>
+        </a>
+        <a href="">
+          <i class="icon fab fa-linkedin"></i>
+        </a>
+      </div>
+    </footer>
+    <script src="app.js"></script>
+  </body>
+</html>
