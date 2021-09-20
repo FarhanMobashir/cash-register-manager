@@ -19,4 +19,4 @@ Don't forget to leave a ⭐ if you found this useful.
 
 # View Live
 
-[Live Project Link](!https://cash-register-manager-mf.netlify.app/)
+Project link - https://cash-register-manager-mf.netlify.app/
