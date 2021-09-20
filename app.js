@@ -100,20 +100,27 @@ const createTable = function createTable(data) {
 };
 
 checkButton.addEventListener("click", function () {
-  if (
-    billAmount !== "" &&
-    cashGiven !== "" &&
-    parseInt(cashGiven) >= parseInt(billAmount)
-  ) {
-    console.log("return change");
-    let cashToBeReturned = calculateReturn(billAmount, cashGiven);
-    let markup = createTable(cashToBeReturned);
-    console.log(markup);
-    output.innerHTML = markup;
+  if (parseInt(billAmount) && parseInt(cashGiven) > 0) {
+    if (
+      billAmount !== "" &&
+      cashGiven !== "" &&
+      parseInt(cashGiven) >= parseInt(billAmount)
+    ) {
+      console.log("return change");
+      let cashToBeReturned = calculateReturn(billAmount, cashGiven);
+      let markup = createTable(cashToBeReturned);
+      console.log(markup);
+      output.innerHTML = markup;
+    } else {
+      output.innerText = "Please fill data correctly";
+      setTimeout(() => {
+        output.innerText = "";
+      }, 3000);
+    }
   } else {
     output.innerText = "Please fill data correctly";
     setTimeout(() => {
       output.innerText = "";
-    }, 1000);
+    }, 3000);
   }
 });
